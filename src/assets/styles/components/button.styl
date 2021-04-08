@@ -1,0 +1,28 @@
+.btn
+  width 175px
+  height 58px
+  display flex
+  align-items center
+  justify-content center
+  border-radius 8px
+  text-transform uppercase 
+  font font-btn
+  cursor pointer
+
+.btn--orange
+  @extend .btn
+  color color-white
+  background color-orange
+  &:hover
+    background color-orange-light
+.btn--gray
+  @extend .btn
+  color color-blue
+  background color-gray
+  &:hover
+    color color-white
+    background color-blue
+
+
+  // color color-white
+  // background color-orange
