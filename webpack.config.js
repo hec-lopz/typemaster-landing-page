@@ -33,6 +33,13 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
         type: "asset/resource",
       },
+      {
+        test: /\.ttf$/,
+        type: "asset/resource",
+        generator: {
+          filename: "static/fonts/[name].[hash][ext]",
+        },
+      },
     ],
   },
   plugins: [
