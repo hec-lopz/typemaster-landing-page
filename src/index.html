@@ -14,44 +14,70 @@
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   </head>
   <body>
-    <header>
-      <figure class="logo"></figure>
-      <a href="" class="btn--gray">Pre-order now</a>
+    <header class="header">
+      <figure class="header__logo">
+        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#F16718" d="M0 0h40v40H0z" />
+            <path
+              d="M10.342 17c.182 0 .288-.11.288-.299v-8.03c0-.078.046-.125.122-.125h2.443c.182 0 .288-.11.288-.299V6.3c0-.189-.106-.299-.288-.299H5.288C5.106 6 5 6.11 5 6.299v1.948c0 .189.106.299.288.299h2.368c.076 0 .121.047.121.125v8.03c0 .189.106.299.288.299h2.277zm6.57 0c.183 0 .29-.11.29-.299v-5.547c0-.125.09-.141.151-.047l.94 1.619a.37.37 0 00.35.204h1.062a.37.37 0 00.35-.204l.94-1.619c.06-.094.152-.078.152.047v5.547c0 .189.106.299.288.299h2.277c.182 0 .288-.11.288-.299V6.3C24 6.11 23.894 6 23.712 6H21.45a.37.37 0 00-.349.204L19.265 9.3c-.045.094-.136.094-.182 0l-1.836-3.096a.37.37 0 00-.35-.204h-2.26c-.183 0-.289.11-.289.299V16.7c0 .189.106.299.289.299h2.276z"
+              fill="#FFF"
+              fill-rule="nonzero"
+            />
+          </g>
+        </svg>
+      </figure>
+      <a href="" class="header__btn btn--gray">Pre-order now</a>
     </header>
-    <main>
+    <main class="main">
       <section class="hero">
-        <div class="hero__headline">
-          <h1 class="headline__titile">Typemaster keyboard</h1>
-          <p class="headline__copy">
-            Improve your productivity and gaming without breaking the bank.
-            Upgrade to a high quality mechanical typing experience.
-          </p>
-          <a href="" class="btn--orange">pre-order now</a
-          ><span class="headline__release">release on 5/27</span>
+        <div class="row-1">
+          <div class="headline hero__headline">
+            <h1 class="hero__title">Typemaster keyboard</h1>
+            <p class="hero__copy">
+              Improve your productivity and gaming without breaking the bank.
+              Upgrade to a high quality mechanical typing experience.
+            </p>
+            <div class="hero__cta">
+              <a href="" class="hero__btn btn--orange">pre-order now</a
+              ><span class="hero__release">release on 5/27</span>
+            </div>
+          </div>
+          <figure class="hero__img" data-img="keyboard">
+            <picture>
+              <img
+                class="img"
+                src="./assets/static/images/mobile/image-keyboard.jpg"
+                alt="Keyboard"
+              />
+            </picture>
+          </figure>
         </div>
-        <picture class="hero__img">
-          <img
-            src="./assets/static/images/mobile/image-keyboard.jpg"
-            alt="Keyboard"
-          />
-        </picture>
-        <picture class="hero__img"
-          ><img
-            src="./assets/static/images/mobile/image-phone-and-keyboard.jpg"
-            alt="Keyboard and Phone"
-        /></picture>
-        <picture class="hero__img"
-          ><img
-            src="./assets/static/images/mobile/image-glass-and-keyboard.jpg"
-            alt="Keyboard and a Glass"
-        /></picture>
-        <div class="hero__subheadline">
-          <h2 class="subheadline__title">mechanical wireless Keyboard</h2>
-          <p class="subheadline__copy">
-            The Typemaster keyboard boasts top-notch build and practical design.
-            It offers a wide variety of switches and keycaps, along with
-            reliable wireless connectivity.
-          </p>
+        <div class="hero__row row-2">
+          <figure class="hero__img" data-img="keyboard-and-phone">
+            <picture
+              ><img
+                class="img"
+                src="./assets/static/images/mobile/image-phone-and-keyboard.jpg"
+                alt="Keyboard and Phone"
+            /></picture>
+          </figure>
+          <figure class="hero__img" data-img="keyboard-and-glass">
+            <picture
+              ><img
+                class="img"
+                src="./assets/static/images/mobile/image-glass-and-keyboard.jpg"
+                alt="Keyboard and a Glass"
+            /></picture>
+          </figure>
+          <div class="hero__subheadline">
+            <h2 class="hero__subtitle">mechanical wireless Keyboard</h2>
+            <p class="subheadline__copy">
+              The Typemaster keyboard boasts top-notch build and practical
+              design. It offers a wide variety of switches and keycaps, along
+              with reliable wireless connectivity.
+            </p>
+          </div>
         </div>
       </section>
       <section class="features">
@@ -69,15 +95,5 @@
     <footer>
       <p class="footer__text">Typemaster 2021 | All Rights Reserved</p>
     </footer>
-    Highly compatible Easy to use and works well with all major computer brands,
-    gaming consoles and mobile devices. Plug & play, no installation or driver
-    needed. Wireless with bluetooth Powerful 2.4G RF technology allows you to
-    connect the cordless keyboard from up to 30ft away. Simply plug the unifying
-    receiver into your computer. High capacity battery Equipped with a
-    long-lasting built-in battery, you’ll never have to spend a dime on
-    replaceable ones.  Enjoy 40 hours of usage time between charges. RGB backlit
-    modes Choose from 4 backlight brightness levels and adjustable breathing
-    speed. Each key glows intensely in the dark and helps you type in low light
-    conditions.
   </body>
 </html>
