@@ -1,0 +1,59 @@
+.hero
+  margin-top margin-vertical * 2
+  &__headline
+    margin-bottom margin-vertical * 2
+    padding 0 (px-unit * 5)
+  &__title
+    font-size 46px
+    margin-top 0
+    margin-bottom 32px
+  &__cta
+    display flex
+    justify-content space-between
+    align-items center
+  &__release
+    text-transform uppercase
+    font-weight font-weight-bold
+  &__row
+    width 100%
+    &.row-2
+      display flex
+      flex-wrap wrap
+      justify-content space-around
+      margin-top 24px
+
+
+  &__img
+    overflow hidden
+    border-radius 20px
+    flex-shrink 0
+    
+    &[data-img="keyboard"]
+      width 372px
+      height 331px
+      transform translateX(21px)
+    &[data-img="keyboard-and-phone"]
+      width 129px
+      height 193px
+      background-color color-orange
+      transform translateX(-21px)
+      & .img
+        opacity .75
+        mix-blend-mode multiply
+        // isolation isolate
+    &[data-img="keyboard-and-glass"]
+      width 220px
+      height 193px
+      margin-right 24px
+    
+  &__subheadline
+    width 375px
+    flex-basis auto
+    flex-grow 2
+    padding 0 box-padding
+    text-align center
+    margin-top 75px
+  &__subtitle
+    width 255px
+    // margin (margin-vertical *2) auto 26px
+    margin auto
