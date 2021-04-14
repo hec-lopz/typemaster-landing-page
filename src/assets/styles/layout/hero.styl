@@ -1,5 +1,6 @@
 .hero
   margin-top margin-vertical * 2
+  overflow hidden
   &__headline
     margin-bottom margin-vertical * 2
     padding 0 (px-unit * 5)
@@ -9,8 +10,10 @@
     margin-bottom 32px
   &__cta
     display flex
-    justify-content space-between
+    // justify-content space-between
     align-items center
+  &__btn + &__release
+    margin-left 32px
   &__release
     text-transform uppercase
     font-weight font-weight-bold
