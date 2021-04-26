@@ -45,6 +45,10 @@
           </div>
           <figure class="hero__img" data-img="keyboard">
             <picture>
+              <source
+                srcset="./assets/static/images/tablet/image-keyboard.jpg 478w"
+                media="(min-width: 768px)"
+              />
               <img
                 class="img"
                 src="./assets/static/images/mobile/image-keyboard.jpg"
@@ -55,8 +59,13 @@
         </div>
         <div class="hero__row row-2">
           <figure class="hero__img" data-img="keyboard-and-phone">
-            <picture
-              ><img
+            <picture></picture>
+              <source
+                srcset="
+                  ./assets/static/images/tablet/image-phone-and-keyboard.jpg
+                "
+                media="(min-width:768px" />
+              <img
                 class="img"
                 src="./assets/static/images/mobile/image-phone-and-keyboard.jpg"
                 alt="Keyboard and Phone"
@@ -64,7 +73,9 @@
           </figure>
           <figure class="hero__img" data-img="keyboard-and-glass">
             <picture
-              ><img
+              >
+              <source srcset="./assets/static/images/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)">
+              <img
                 class="img"
                 src="./assets/static/images/mobile/image-glass-and-keyboard.jpg"
                 alt="Keyboard and a Glass"
@@ -72,7 +83,7 @@
           </figure>
           <div class="hero__subheadline">
             <h2 class="hero__subtitle">mechanical wireless Keyboard</h2>
-            <p class="subheadline__copy">
+            <p class="hero__subcopy">
               The Typemaster keyboard boasts top-notch build and practical
               design. It offers a wide variety of switches and keycaps, along
               with reliable wireless connectivity.
