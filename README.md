@@ -54,7 +54,7 @@ npm run build
 ### Links
 
 - Solution URL: [Hector Lopez' repository](https://github.com/hec-lopz/typemaster-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Check out the project](https://hec-lopz.github.io/typemaster-landing-page/)
 
 ## My process
 
