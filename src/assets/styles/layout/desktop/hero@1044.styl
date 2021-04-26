@@ -1,0 +1,62 @@
+.pattern-square
+  content ""
+  display block
+  position absolute
+  width 255px
+  height 240px
+  background #E8EFF2
+  border-radius 20px
+
+.hero
+  max-width 1440px
+  
+
+  &__headline
+    flex-basis 430px
+  &__row
+    margin auto
+    position relative
+  .row-1
+    padding 0 30px
+    max-width desktop-max-width
+    &::before
+      @extend .pattern-square
+      top 0
+      right -255px
+    
+
+  .row-2
+    max-width desktop-max-width
+    padding 0 30px
+    align-items center
+    justify-content space-between
+    &::before
+      @extend .pattern-square
+      bottom 0
+      left -255px
+
+  &__subheadline
+    margin-top 0
+    margin-left calc(100% - (255px + 30px + 445px + 255px))
+    display block
+    width 255px
+    flex-basis @width
+    flex-grow 0
+
+  &__img
+    
+    &[data-img="keyboard"]
+      width 540px
+      height 480px
+      transform translateX(0)
+
+    &[data-img="keyboard-and-phone"]
+      width 255px
+      height 480px
+      margin-right 30px
+      
+    &[data-img="keyboard-and-glass"]
+      width 445px
+      height 480px
+      // margin-left -75px
+      
