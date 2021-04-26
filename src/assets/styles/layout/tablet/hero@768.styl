@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px)
+  .hero
+    .row-1
+      display flex
+      justify-content space-between
+      align-items center
+      padding-left 40px
+      // flex-wrap wrap
+    &__headline
+      flex-basis 370px
+      flex-shrink 0
+      margin-bottom 0
+      padding-left 0
+
+
+      // flex-grow 2
+    .row-2
+      justify-content space-between
+      padding 0 40px // = 40px
+      margin-top 40px
+      align-content space-between
+    &__subheadline
+      display flex
+      align-items center
+      justify-content space-between
+      padding 0
+      text-align initial
+      & > *
+        margin 0
+    &__subcopy
+      flex-basis 400px
+      flex-grow 0
+
+    &__img
+      
+      &[data-img="keyboard"]
+        flex-grow 0
+        transform translateX(70px)
+        width 478px
+        height 425px
+
+      &[data-img="keyboard-and-phone"]
+        width 214px
+        height 320px
+        background-color color-orange
+        transform translateX(0px) 
+        flex-grow 0
+      &[data-img="keyboard-and-glass"]
+        width 445px
+        height 320px
+        margin-right 0
