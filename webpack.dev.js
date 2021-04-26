@@ -7,6 +7,9 @@ module.exports = {
     filename: "bundle.js",
   },
   mode: "development",
+  devServer: {
+    open: "firefox-dev",
+  },
   devtool: "eval",
   module: {
     rules: [
