@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    assetModuleFilename: "assets/images/[name].[hash][ext]",
+    assetModuleFilename: "assets/static/images/[name].[hash][ext]",
   },
   mode: "production",
   module: {
@@ -35,10 +35,7 @@ module.exports = {
       },
       {
         test: /\.ttf$/,
-        type: "asset/resource",
-        generator: {
-          filename: "static/fonts/[name].[hash][ext]",
-        },
+        type: "asset/inline",
       },
     ],
   },
